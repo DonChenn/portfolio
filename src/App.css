@@ -1,0 +1,44 @@
+body {
+  line-height: 1.6;
+  color: rgb(42, 45, 56);
+  font-family: Inter, sans-serif;
+  background: #f9f9f9;
+}
+
+nav {
+  background-color: #f9f9f9;
+}
+
+.logo {
+  font-size: 24px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: #2a2d38;
+}
+
+.logo-name {
+  text-decoration: none;
+  color: #2a2d38;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #2a2d38;
+  font-weight: 300;
+  transition: color 0.2s ease;
+}
+
+.home {
+  background-color: #f9f9f9;
+  padding: 32px;
+}
+
+.projects {
+  background-color: #f9f9f9;
+}
