@@ -6,7 +6,7 @@ function Introduction() {
         <div className="intro-text-container">
           <h1 className="name">
             <span className="name-black">Hello, I'm </span>
-            <span className="name-color">Donovan</span>
+            <span className="name-color">Donovan!</span>
           </h1>
           <p className="description">
             I'm currently at UC Irvine studying Computer Science with an
