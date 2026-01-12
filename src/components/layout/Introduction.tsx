@@ -9,8 +9,7 @@ function Introduction() {
             <span className="name-color">Donovan</span>
           </h1>
           <p className="intro-description">
-            I'm a Full-Stack developer studying Computer Science at the
-            University of California, Irvine
+            I'm a Full-Stack developer studying Computer Science at UC Irvine
           </p>
         </div>
         {/* image container */}

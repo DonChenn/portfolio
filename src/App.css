@@ -14,6 +14,14 @@ body {
 }
 
 /* Navigation */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #f9f9f9; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
 .nav-bar {
   padding-left: 3rem;
   padding-right: 3rem;
