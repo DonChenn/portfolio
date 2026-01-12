@@ -35,9 +35,12 @@ function ProjectCardItem({
 function ProjectCard() {
   return (
     <section className="projects-section">
-      {projects.map((project, index) => (
-        <ProjectCardItem key={project.title} {...project} index={index} />
-      ))}
+      <h2>Featured Projects</h2>
+      <div className="project-cards">
+        {projects.map((project, index) => (
+          <ProjectCardItem key={project.title} {...project} index={index} />
+        ))}
+      </div>
     </section>
   );
 }

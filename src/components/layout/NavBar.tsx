@@ -28,7 +28,11 @@ function NavBar() {
               </Link>
             </li>
             <li>
-              <a className="nav-resume" href='/portfolio/Donovan_Chen_2026.pdf' target="_blank">
+              <a
+                className="nav-resume"
+                href="/portfolio/Donovan_Chen_2026.pdf"
+                target="_blank"
+              >
                 resume
               </a>
             </li>
