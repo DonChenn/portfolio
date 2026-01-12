@@ -351,3 +351,42 @@ header {
     text-align: left;
   }
 }
+
+footer {
+  display: flex;
+  height: 30px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  justify-content: end;
+  align-items: center;
+  gap: 64px;
+  flex: 1 0 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-text {
+  font-size: 1.25rem;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.icon-link {
+  color: inherit;
+  display: flex;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  opacity: 0.7;
+}
