@@ -1,16 +1,26 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   line-height: 1.6;
   color: rgb(42, 45, 56);
-  font-family: sans-serif;
+  font-family: Inter, sans-serif;
   background: #f9f9f9;
+  min-height: 100vh;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #f9f9f9;
-  padding: 32px;
-  align-items: baseline;
+  align-items: center;
+  background: #f9f9f9;
+  position: sticky;
+  top: 0px;
+  padding: 30px 100px 0px;
 }
 
 .logo-name {
@@ -35,9 +45,133 @@ nav {
 
 .home {
   background-color: #f9f9f9;
-  padding: 32px;
+}
+
+.introduction {
+  background-color: aqua;
 }
 
 .projects {
   background-color: #f9f9f9;
+}
+
+/* 1. Main Section Container */
+.projects-section {
+  width: 100%;
+  max-width: 1400px; /* Limits the total width so it doesn't stretch infinitely on ultrawide monitors */
+  margin: 0 auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* 2. Individual Project Row */
+.project-card-container {
+  display: flex;
+  flex-direction: column; /* Stacked on mobile */
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 120px; /* Space between different projects */
+  width: 100%;
+}
+
+/* 3. The 2:3 Aspect Ratio Image */
+.project-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-thumbnail {
+  width: 100%;
+  max-width: 400px; /* Default size for mobile */
+  aspect-ratio: 2 / 3; /* Forces 2:3 ratio */
+  object-fit: cover; /* Prevents squishing */
+  border-radius: 16px;
+  display: block;
+}
+
+/* 4. Text Content Area */
+.project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-title {
+  font-family: monospace; /* Matches your source HTML style */
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000000;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.project-description-text {
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.project-link-action {
+  font-family: monospace;
+  font-weight: 600;
+  color: #008000; /* Green color from your source */
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+.project-link-action:hover {
+  text-decoration: underline;
+}
+
+/* 5. Desktop "Big" Layout (Flipping & Scaling) */
+@media (min-width: 992px) {
+  .project-card-container {
+    flex-direction: row; /* Horizontal on desktop */
+    gap: 100px; /* Large gap between image and text */
+    padding: 0 40px;
+  }
+
+  /* This class handles the alternating flip */
+  .project-card-container.flex-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .project-thumbnail {
+    max-width: 650px; /* Significant size increase for desktop */
+  }
+
+  .project-image-wrapper, 
+  .project-content {
+    flex: 1; /* Both sides take up 50% of the row */
+  }
+
+  /* Text Alignment for flipped items */
+  .align-end {
+    align-items: flex-end;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .align-start {
+    align-items: flex-start;
+  }
+
+  .text-left {
+    text-align: left;
+  }
 }

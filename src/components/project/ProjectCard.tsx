@@ -1,47 +1,30 @@
 import { Link } from "react-router-dom";
 import { projects, type Project } from "../../data/project";
 
-function ProjectCardItem({ title, description, thumbnail, link }: Project) {
-  return (
-    <article className="container py-5 border-bottom">
-      <div className="row align-items-center">
-        {/* Thumbnail */}
-        <div className="thumbnail">
-          <div
-            className="position-relative"
-            style={{ width: "100%", maxWidth: "400px" }}
-          >
-            <img
-              src={thumbnail}
-              className="project-img-primary"
-              alt={`${title} mockup 1`}
-              style={{ width: "80%" }}
-            />
-            <img
-              src={thumbnail}
-              className="project-img-secondary"
-              alt={`${title} mockup 2`}
-              style={{
-                width: "60%",
-                bottom: "-20px",
-                right: "0",
-                border: "2px solid black",
-              }}
-            />
-          </div>
-        </div>
+interface ProjectCardItemProps extends Project {
+  index: number;
+}
 
-        {/* description */}
-        <div className="description">
-          <h1 className="project-title">{title}</h1>
-          <p className="project-description">{description}</p>
-          <Link
-            to={link}
-            className="project-link"
-          >
-            read more <span className="link-arrow">→</span>
-          </Link>
-        </div>
+function ProjectCardItem({
+  title,
+  description,
+  thumbnail,
+  link,
+  index,
+}: ProjectCardItemProps) {
+  const isReversed = index % 2 !== 0;
+
+  return (
+    <article
+      className={`custom-project-row ${isReversed ? "row-flipped" : ""}`}
+    >
+      <div className="image-wrapper">
+        <img src={thumbnail} alt={title} className="big-thumbnail" />
+      </div>
+      <div className="content-wrapper">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <Link to={link}>read more →</Link>
       </div>
     </article>
   );
@@ -49,19 +32,11 @@ function ProjectCardItem({ title, description, thumbnail, link }: Project) {
 
 function ProjectCard() {
   return (
-    <section className="projects">
-      <div className="card-container">
-        {projects.map((project) => (
-          <ProjectCardItem
-            key={project.title}
-            title={project.title}
-            description={project.description}
-            thumbnail={project.thumbnail}
-            link={project.link}
-            images={project.images}
-          />
-        ))}
-      </div>
+    /* Ensure THIS div isn't being squeezed by a parent class */
+    <section className="wide-layout-wrapper">
+      {projects.map((project, index) => (
+        <ProjectCardItem key={project.title} {...project} index={index} />
+      ))}
     </section>
   );
 }

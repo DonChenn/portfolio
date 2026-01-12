@@ -1,8 +1,3 @@
-import fabflix_thumbnail from "../../public/projects/fabflix/login.png";
-import glub_world_thumbnail from "../../public/projects/glub_world/login.png";
-import guidance_glasses_thumbnail from "../../public/projects/guidance_glasses/guidance_glasses.png";
-import purin_car_thumbnail from "../../public/projects/purin_car/purin_car_service.png";
-
 export interface Project {
   title: string;
   description: string;
@@ -16,7 +11,7 @@ export const projects: Project[] = [
     title: "Purin Car",
     description:
       "Android application using Kotlin, Room Database and Jetpack Compose Android app for tracking vehicle maintenance intervals with a reactive UI.",
-    thumbnail: purin_car_thumbnail,
+    thumbnail: "/projects/purin_car/purin_car_service.png",
     link: "/project/purin-car",
     images: [],
   },
@@ -24,7 +19,7 @@ export const projects: Project[] = [
     title: "Glub World",
     description:
       "Video game website using HTML, JavaScript, and CSS with AWS for my significant other.",
-    thumbnail: glub_world_thumbnail,
+    thumbnail: "/projects/glub_world/login.png",
     link: "/project/glub-world",
     images: [],
   },
@@ -32,7 +27,7 @@ export const projects: Project[] = [
     title: "Fabflix",
     description:
       "Movie catalog website using Java Servlets, MySQL, HTML, JavaScript/jQuery, and CSS with AWS, Maven, and Docker.",
-    thumbnail: fabflix_thumbnail,
+    thumbnail: "/projects/fabflix/login.png",
     link: "/project/fabflix",
     images: [],
   },
@@ -40,7 +35,7 @@ export const projects: Project[] = [
     title: "Guidance Glasses",
     description:
       "A pair of glasses that can assist the visually impaired to navigate urban environments by providing information about their surroundings via haptic feedback.",
-    thumbnail: guidance_glasses_thumbnail,
+    thumbnail: "/projects/guidance_glasses/guidance_glasses.png",
     link: "/project/guidance-glasses",
     images: [],
   },

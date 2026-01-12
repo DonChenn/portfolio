@@ -1,22 +1,22 @@
-import headshot from "../../../public/headshot.jpg";
-
 function Introduction() {
   return (
-    <section className="introduction">
-      <h1>Donovan Chen</h1>
-      <div>
-        <p>
-          Computer Science Hello! My name is Donovan. I am a fourth-year UC
-          Irvine student pursuing a B.S in Computer Science with a
-          specialization in Intelligent Systems! I have a strong interest in
-          full-stack development, enjoying the challenge that comes along with
-          it. I am driven by a desire for continuous learning, and I am always
-          seeking new opportunities to refine my skills. Outside of my
-          professional interests, you can find me getting boba, playing
-          basketball, or even with my film camera taking pictures!
-        </p>
-
-        <img src={headshot} alt="Donovan Chen" width="500" />
+    <section className="intro">
+      <div className="intro-container">
+        {/* content */}
+        <div className="intro-text-container">
+          <h1 className="name">
+            <span className="name-black">Hi, I'm Donovan</span>
+            <span className="name-color">Donovan</span>
+          </h1>
+          <p className="intro-description">
+            I'm a Full-Stack developer studying Computer Science at the
+            University of California, Irvine
+          </p>
+        </div>
+        {/* image container */}
+        <div className="intro-img-container">
+          <img src="/headshot.jpg" alt="Donovan Chen" width="500" />
+        </div>
       </div>
     </section>
   );
