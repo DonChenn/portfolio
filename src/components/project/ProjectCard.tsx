@@ -5,20 +5,21 @@ function ProjectCardItem({ title, description, thumbnail, link }: Project) {
   return (
     <article className="container py-5 border-bottom">
       <div className="row align-items-center">
-        <div className="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
+        {/* Thumbnail */}
+        <div className="thumbnail">
           <div
             className="position-relative"
             style={{ width: "100%", maxWidth: "400px" }}
           >
             <img
               src={thumbnail}
-              className="img-fluid rounded shadow"
+              className="project-img-primary"
               alt={`${title} mockup 1`}
               style={{ width: "80%" }}
             />
             <img
               src={thumbnail}
-              className="img-fluid rounded shadow position-absolute"
+              className="project-img-secondary"
               alt={`${title} mockup 2`}
               style={{
                 width: "60%",
@@ -30,14 +31,15 @@ function ProjectCardItem({ title, description, thumbnail, link }: Project) {
           </div>
         </div>
 
-        <div className="col-md-6 text-center text-md-start px-md-5">
-          <h1 className="display-4 fw-bold">{title}</h1>
-          <p className="lead fs-4 text-secondary">{description}</p>
+        {/* description */}
+        <div className="description">
+          <h1 className="project-title">{title}</h1>
+          <p className="project-description">{description}</p>
           <Link
             to={link}
-            className="btn btn-link p-0 text-decoration-none fw-bold fs-5"
+            className="project-link"
           >
-            read more <span className="ms-2">→</span>
+            read more <span className="link-arrow">→</span>
           </Link>
         </div>
       </div>
@@ -48,7 +50,7 @@ function ProjectCardItem({ title, description, thumbnail, link }: Project) {
 function ProjectCard() {
   return (
     <section className="projects">
-      <div className="container-fluid p-0">
+      <div className="card-container">
         {projects.map((project) => (
           <ProjectCardItem
             key={project.title}

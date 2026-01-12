@@ -1,24 +1,23 @@
 body {
   line-height: 1.6;
   color: rgb(42, 45, 56);
-  font-family: Inter, sans-serif;
+  font-family: sans-serif;
   background: #f9f9f9;
 }
 
 nav {
+  display: flex;
+  justify-content: space-between;
   background-color: #f9f9f9;
-}
-
-.logo {
-  font-size: 24px;
-  font-family: Inter, sans-serif;
-  font-weight: 600;
-  color: #2a2d38;
+  padding: 32px;
+  align-items: baseline;
 }
 
 .logo-name {
   text-decoration: none;
   color: #2a2d38;
+  font-family: sans-serif;
+  font-size: 32px;
 }
 
 .nav-links {
