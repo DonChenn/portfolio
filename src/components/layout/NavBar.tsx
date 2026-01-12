@@ -9,7 +9,6 @@ function NavBar() {
           {/* name button */}
           <div className="logo-container">
             <div>
-              <img src="" alt="logo" className="logo-img" />
               <Link className="logo-name" to="/">
                 Donovan Chen
               </Link>

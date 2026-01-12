@@ -16,15 +16,17 @@ function ProjectCardItem({
 
   return (
     <article
-      className={`custom-project-row ${isReversed ? "row-flipped" : ""}`}
+      className={`project-card-container ${isReversed ? "flex-reverse" : ""}`}
     >
-      <div className="image-wrapper">
-        <img src={thumbnail} alt={title} className="big-thumbnail" />
+      <div className="project-image-wrapper">
+        <img src={thumbnail} alt={title} className="project-thumbnail" />
       </div>
-      <div className="content-wrapper">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <Link to={link}>read more →</Link>
+      <div className="project-content">
+        <h3 className="project-title">{title}</h3>
+        <p className="project-description-text">{description}</p>
+        <Link to={link} className="project-link-action">
+          read more →
+        </Link>
       </div>
     </article>
   );
@@ -32,8 +34,7 @@ function ProjectCardItem({
 
 function ProjectCard() {
   return (
-    /* Ensure THIS div isn't being squeezed by a parent class */
-    <section className="wide-layout-wrapper">
+    <section className="projects-section">
       {projects.map((project, index) => (
         <ProjectCardItem key={project.title} {...project} index={index} />
       ))}

@@ -5,7 +5,7 @@ function Introduction() {
         {/* content */}
         <div className="intro-text-container">
           <h1 className="name">
-            <span className="name-black">Hi, I'm Donovan</span>
+            <span className="name-black">Hi, I'm </span>
             <span className="name-color">Donovan</span>
           </h1>
           <p className="intro-description">
@@ -15,7 +15,7 @@ function Introduction() {
         </div>
         {/* image container */}
         <div className="intro-img-container">
-          <img src="/headshot.jpg" alt="Donovan Chen" width="500" />
+          <img src="/portfolio/headshot.jpg" alt="Donovan Chen" width="500" />
         </div>
       </div>
     </section>
