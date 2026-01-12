@@ -23,7 +23,7 @@ function ProjectCardItem({
       </div>
       <div className="project-content">
         <h3 className="project-title">{title}</h3>
-        <p className="project-description-text">{description}</p>
+        <p className="description">{description}</p>
         <Link to={link} className="project-link-action">
           read more →
         </Link>

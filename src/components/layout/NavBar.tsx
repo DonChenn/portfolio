@@ -19,17 +19,17 @@ function NavBar() {
           <ul className="nav-links">
             <li>
               <Link to="/projects" className="nav-projects">
-                Projects
+                projects
               </Link>
             </li>
             <li>
               <Link to="/about" className="nav-about">
-                About
+                about
               </Link>
             </li>
             <li>
               <a className="nav-resume" href='/portfolio/Donovan_Chen_2026.pdf' target="_blank">
-                Resume
+                resume
               </a>
             </li>
           </ul>
