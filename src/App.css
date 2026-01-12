@@ -146,8 +146,8 @@ header {
   white-space: nowrap;
   border-right: 3px solid #008000;
   animation: 
-    typing 1.5s steps(7) forwards,
-    blink 0.8s step-end infinite;
+    typing 0.7s steps(8) forwards,
+    blink 0.7s step-end infinite;
 }
 
 @keyframes typing {
