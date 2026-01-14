@@ -1,11 +1,11 @@
-import ProjectCard from "../components/project/ProjectCard";
+import { FeaturedProjectCards } from "../components/project/ProjectCard";
 import Introduction from "../components/layout/Introduction";
 
 function Home() {
   return (
     <div className="home">
       <Introduction />
-      <ProjectCard />
+      <FeaturedProjectCards />
     </div>
   );
 }

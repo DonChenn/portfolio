@@ -5,7 +5,7 @@ interface ProjectCardItemProps extends Project {
   index: number;
 }
 
-function ProjectCardItem({
+function FaturedProjectCard({
   title,
   description,
   thumbnail,
@@ -32,17 +32,50 @@ function ProjectCardItem({
   );
 }
 
-function ProjectCard() {
+export function FeaturedProjectCards() {
   return (
     <section className="projects-section">
       <h2>Featured Projects</h2>
       <div className="project-cards">
         {projects.map((project, index) => (
-          <ProjectCardItem key={project.title} {...project} index={index} />
+          <FaturedProjectCard key={project.title} {...project} index={index} />
         ))}
       </div>
     </section>
   );
 }
 
-export default ProjectCard;
+function AllProjectCard({
+  title,
+  description,
+  thumbnail,
+  link,
+}: ProjectCardItemProps) {
+  return (
+    <article className="project-card-container">
+      <div className="project-image-wrapper">
+        <img src={thumbnail} alt={title} className="project-thumbnail" />
+      </div>
+      <div className="project-content">
+        <h3 className="project-title">{title}</h3>
+        <p className="description">{description}</p>
+        <Link to={link} className="project-link-action">
+          read more →
+        </Link>
+      </div>
+    </article>
+  );
+}
+
+export function AllProjectCards() {
+  return (
+    <section className="projects-section">
+      <h2>Featured Projects</h2>
+      <div className="project-cards">
+        {projects.map((project, index) => (
+          <AllProjectCard key={project.title} {...project} index={index} />
+        ))}
+      </div>
+    </section>
+  );
+}
