@@ -5,6 +5,7 @@ export interface Project {
   thumbnail: string;
   link: string;
   images: string[];
+  featured: boolean;
 }
 
 export const projects: Project[] = [
@@ -12,10 +13,11 @@ export const projects: Project[] = [
     title: "SMYZE",
     subheading: "MOBILE/WEB APP · FULL STACK DEVELOPMENT · FLUTTER/REACT",
     description:
-      "Software Engineer Intern",
+      "Full Stack Software Engineer Intern",
     thumbnail: "/portfolio/projects/smyze/thumbnail.png",
     link: "/project/smyze",
     images: [],
+    featured: true
   },
   {
     title: "Purin Car",
@@ -25,6 +27,7 @@ export const projects: Project[] = [
     thumbnail: "/portfolio/projects/purin_car/thumbnail.png",
     link: "/project/purin-car",
     images: [],
+    featured: true
   },
   {
     title: "Glub World",
@@ -34,6 +37,7 @@ export const projects: Project[] = [
     thumbnail: "/portfolio/projects/glub_world/thumbnail.png",
     link: "/project/glub-world",
     images: [],
+    featured: false
   },
   {
     title: "Fabflix",
@@ -43,6 +47,7 @@ export const projects: Project[] = [
     thumbnail: "/portfolio/projects/fabflix/thumbnail.png",
     link: "/project/fabflix",
     images: [],
+    featured: true
   },
   {
     title: "Guidance Glasses",
@@ -52,5 +57,6 @@ export const projects: Project[] = [
     thumbnail: "/portfolio/projects/guidance_glasses/thumbnail.png",
     link: "/project/guidance-glasses",
     images: [],
+    featured: true
   },
 ];

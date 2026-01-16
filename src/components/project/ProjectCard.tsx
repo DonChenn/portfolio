@@ -22,8 +22,10 @@ function FaturedProjectCard({
       <div className="project-image-wrapper">
         <img src={thumbnail} alt={title} className="project-thumbnail" />
       </div>
-      
-      <div className={`project-content ${isReversed ? "text-right align-end" : "text-left align-start"}`}>
+
+      <div
+        className={`project-content ${isReversed ? "text-right align-end" : "text-left align-start"}`}
+      >
         <h3 className="project-title">{title}</h3>
         <p className="description">{subheading}</p>
         <p className="description">{description}</p>
@@ -40,9 +42,15 @@ export function FeaturedProjectCards() {
     <section className="projects-section">
       <h2>Featured Projects</h2>
       <div className="project-cards">
-        {projects.map((project, index) => (
-          <FaturedProjectCard key={project.title} {...project} index={index} />
-        ))}
+        {projects
+          .filter((project) => project.featured)
+          .map((project, index) => (
+            <FaturedProjectCard
+              key={project.title}
+              {...project}
+              index={index}
+            />
+          ))}
       </div>
     </section>
   );
@@ -75,7 +83,7 @@ function AllProjectCard({
 export function AllProjectCards() {
   return (
     <section className="projects-section">
-      <h2>Featured Projects</h2>
+      <h2>All Projects</h2>
       <div className="project-cards">
         {projects.map((project, index) => (
           <AllProjectCard key={project.title} {...project} index={index} />
