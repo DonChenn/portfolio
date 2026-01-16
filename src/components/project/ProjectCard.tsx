@@ -22,7 +22,8 @@ function FaturedProjectCard({
       <div className="project-image-wrapper">
         <img src={thumbnail} alt={title} className="project-thumbnail" />
       </div>
-      <div className="project-content">
+      
+      <div className={`project-content ${isReversed ? "text-right align-end" : "text-left align-start"}`}>
         <h3 className="project-title">{title}</h3>
         <p className="description">{subheading}</p>
         <p className="description">{description}</p>

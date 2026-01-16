@@ -9,7 +9,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Purin Car",
+    title: "SMYZE",
     subheading: "MOBILE/WEB APP · FULL STACK DEVELOPMENT · FLUTTER/REACT",
     description:
       "Software Engineer Intern",

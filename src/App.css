@@ -13,31 +13,24 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 1.5rem;
+}
+
 h1 {
   font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  font-family: "Roboto Mono", monospace;
 }
-
 h2 {
   font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  font-family: "Roboto Mono", monospace;
 }
-
 h3 {
   font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  font-family: "Roboto Mono", monospace;
 }
 
 .description {
@@ -57,19 +50,7 @@ header {
 }
 
 .nav-bar {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 1.5rem;
-  padding-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  .nav-bar {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 1.5rem;
-    padding-bottom: 0;
-  }
+  padding: 1.5rem 3rem 0;
 }
 
 .nav-container {
@@ -83,36 +64,30 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  flex: 1 1 0%;
+  flex: 1;
 }
 
 .logo-name {
   font-family: "Roboto Mono", monospace;
   text-decoration: underline;
-  color: hsl(0 0% 0%);
-  line-height: 145%;
+  color: #000;
   font-size: 1.125rem;
-  letter-spacing: -0.36px;
 }
 
 @media (min-width: 768px) {
   .logo-name {
     font-size: 1.5rem;
-    letter-spacing: -0.48px;
   }
 }
 
 .nav-links {
   display: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 
 @media (min-width: 768px) {
   .nav-links {
     display: flex;
-    align-items: center;
     gap: 1.5rem;
   }
 }
@@ -121,12 +96,8 @@ header {
 .nav-about,
 .nav-resume {
   font-family: "Roboto Mono", monospace;
-  font-weight: 500;
-  font-size: 1rem;
-  color: hsl(0 0% 0%);
+  color: #000;
   text-decoration: underline;
-  line-height: 145%;
-  letter-spacing: -0.08px;
 }
 
 /* Introduction */
@@ -226,34 +197,23 @@ header {
   }
 }
 
-/* Projects */
-
-.projects {
-  background-color: #f9f9f9;
-}
-
+/* Projects Section */
 .projects-section {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 0 3rem;
 }
 
 .project-cards {
   width: 100%;
   max-width: 1600px;
-  padding-left: 3rem;
-  padding-right: 3rem;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .project-card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 120px;
-  width: 100%;
+  margin-bottom: 100px;
+  gap: 2rem;
 }
 
 .project-image-wrapper {
@@ -263,39 +223,20 @@ header {
 }
 
 .project-thumbnail {
-  width: fit-content;
-  object-fit: cover;
-  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
 .project-content {
   display: flex;
   flex-direction: column;
-  flex: 1;
   width: 100%;
-}
-
-.text-group {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
 .project-title {
   font-family: monospace;
-  font-weight: bold;
   font-size: 2rem;
-  color: #000000;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.project-description-text {
-  font-family: monospace;
-  font-weight: 500;
-  font-size: 1.1rem;
-  color: rgba(0, 0, 0, 0.6);
-  line-height: 1.5;
   margin: 0;
 }
 
@@ -304,8 +245,7 @@ header {
   font-weight: 600;
   color: #008000;
   text-decoration: none;
-  font-size: 1.1rem;
-  margin-top: 8px;
+  margin-top: 1rem;
 }
 
 .project-link-action:hover {
@@ -315,16 +255,11 @@ header {
 @media (min-width: 992px) {
   .project-card-container {
     flex-direction: row;
-    gap: 100px;
-    padding: 0 40px;
+    gap: 40px;
   }
 
   .project-card-container.flex-reverse {
     flex-direction: row-reverse;
-  }
-
-  .project-thumbnail {
-    max-width: 650px;
   }
 
   .project-image-wrapper,
@@ -332,20 +267,20 @@ header {
     flex: 1;
   }
 
-  .align-end {
-    align-items: flex-end;
-  }
-
   .text-right {
     text-align: right;
   }
 
-  .align-start {
-    align-items: flex-start;
-  }
-
   .text-left {
     text-align: left;
+  }
+
+  .align-end {
+    align-items: flex-end;
+  }
+
+  .align-start {
+    align-items: flex-start;
   }
 }
 
