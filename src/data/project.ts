@@ -1,5 +1,6 @@
 export interface Project {
   title: string;
+  subheading: string;
   description: string;
   thumbnail: string;
   link: string;
@@ -9,32 +10,45 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "Purin Car",
+    subheading: "MOBILE/WEB APP · FULL STACK DEVELOPMENT · FLUTTER/REACT",
     description:
-      "Android application using Kotlin, Room Database and Jetpack Compose Android app for tracking vehicle maintenance intervals with a reactive UI.",
+      "Software Engineer Intern",
+    thumbnail: "/portfolio/projects/smyze/thumbnail.png",
+    link: "/project/smyze",
+    images: [],
+  },
+  {
+    title: "Purin Car",
+    subheading: "MOBILE APP · JETPACK COMPOSE · FULL STACK DEVELOPMENT",
+    description:
+      "A reliable assistant for your vehicle’s health and longevity",
     thumbnail: "/portfolio/projects/purin_car/thumbnail.png",
     link: "/project/purin-car",
     images: [],
   },
   {
     title: "Glub World",
+    subheading: "WEB APP · VIDEO GAME · FULL STACK DEVELOPMENT",
     description:
-      "Video game website using HTML, JavaScript, and CSS with AWS for my significant other.",
+      "A fish’s brave journey across the deep, a video game for my significant other",
     thumbnail: "/portfolio/projects/glub_world/thumbnail.png",
     link: "/project/glub-world",
     images: [],
   },
   {
     title: "Fabflix",
+    subheading: "WEB APP · AWS · FULL STACK DEVELOPMENT",
     description:
-      "Movie catalog website using Java Servlets, MySQL, HTML, JavaScript/jQuery, and CSS with AWS, Maven, and Docker.",
+      "Connecting you with films through an expansive cinematic catalog",
     thumbnail: "/portfolio/projects/fabflix/thumbnail.png",
     link: "/project/fabflix",
     images: [],
   },
   {
     title: "Guidance Glasses",
+    subheading: "EMBEDDED SYSTEMS · COMPUTER VISION · MACHINE LEARNING",
     description:
-      "A pair of glasses that can assist the visually impaired to navigate urban environments by providing information about their surroundings via haptic feedback.",
+      "Helping the visually impaired make the world feel a little more navigatable",
     thumbnail: "/portfolio/projects/guidance_glasses/thumbnail.png",
     link: "/project/guidance-glasses",
     images: [],

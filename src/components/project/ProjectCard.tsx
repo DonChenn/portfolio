@@ -7,6 +7,7 @@ interface ProjectCardItemProps extends Project {
 
 function FaturedProjectCard({
   title,
+  subheading,
   description,
   thumbnail,
   link,
@@ -23,6 +24,7 @@ function FaturedProjectCard({
       </div>
       <div className="project-content">
         <h3 className="project-title">{title}</h3>
+        <p className="description">{subheading}</p>
         <p className="description">{description}</p>
         <Link to={link} className="project-link-action">
           read more →
@@ -47,6 +49,7 @@ export function FeaturedProjectCards() {
 
 function AllProjectCard({
   title,
+  subheading,
   description,
   thumbnail,
   link,
@@ -58,6 +61,7 @@ function AllProjectCard({
       </div>
       <div className="project-content">
         <h3 className="project-title">{title}</h3>
+        <p className="description">{subheading}</p>
         <p className="description">{description}</p>
         <Link to={link} className="project-link-action">
           read more →
