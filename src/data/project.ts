@@ -21,7 +21,7 @@ export const projects: Project[] = [
   },
   {
     title: "Purin Car",
-    subheading: "MOBILE APP · JETPACK COMPOSE · FULL STACK DEVELOPMENT",
+    subheading: "ANDROID APP · JETPACK COMPOSE · FULL STACK DEVELOPMENT",
     description:
       "A reliable assistant for your vehicle’s health and longevity",
     thumbnail: "/portfolio/projects/purin_car/thumbnail.png",
