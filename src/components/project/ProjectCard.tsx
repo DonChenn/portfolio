@@ -83,7 +83,6 @@ function AllProjectCard({
 export function AllProjectCards() {
   return (
     <section className="projects-section">
-      <h2>All Projects</h2>
       <div className="project-cards">
         {projects.map((project, index) => (
           <AllProjectCard key={project.title} {...project} index={index} />

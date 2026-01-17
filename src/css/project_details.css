@@ -1,0 +1,72 @@
+.project-details-container {
+    padding: 0 3rem;
+}
+
+.project-details-header {
+  margin-bottom: 2rem;
+}
+
+.project-info {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  font-family: "Roboto Mono", monospace;
+}
+
+.project-thumbnail-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-details-thumbnail {
+    max-width: 60%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.project-info th,
+.project-info td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  vertical-align: top;
+}
+
+.project-info th {
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+}
+
+.project-info td {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.project-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-info-list li {
+  margin-bottom: 0.25rem;
+}
+
+.project-info-list li:last-child {
+  margin-bottom: 0;
+}
+
+.project-info a {
+  color: #008000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
