@@ -1,5 +1,11 @@
-.project-details-container {
-    padding: 0 3rem;
+.project-detail-body {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.project-information {
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 .project-details-header {
@@ -15,15 +21,15 @@
 }
 
 .project-thumbnail-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .project-details-thumbnail {
-    max-width: 60%;
-    height: auto;
-    border-radius: 12px;
+  max-width: 60%;
+  height: auto;
+  border-radius: 12px;
 }
 
 .project-info th,
