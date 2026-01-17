@@ -2,10 +2,9 @@ export interface Project {
   title: string;
   subheading: string;
   slogan: string;
-  description: { header: string; text: string; bullets?: string[] }[];
+  description: { header: string; text: string; bullets?: string[]; image?: string }[];
   thumbnail: string;
   link: string;
-  images: string[];
   featured: boolean;
   role?: string;
   techstack?: string[];
@@ -16,7 +15,7 @@ export const projects: Project[] = [
   {
     title: "SMYZE",
     subheading:
-      "MOBILE APP · WEB APP · FULL STACK DEVELOPMENT · FLUTTER · REACT",
+      "MOBILE APP · WEB APP · FULL STACK DEVELOPMENT",
     slogan: "Full Stack Software Engineer Intern",
     description: [
       {
@@ -26,7 +25,6 @@ export const projects: Project[] = [
     ],
     thumbnail: "/portfolio/projects/smyze/thumbnail.png",
     link: "/project/smyze",
-    images: [],
     featured: true,
     role: "Full Stack Software Engineer Intern",
     techstack: [
@@ -42,7 +40,7 @@ export const projects: Project[] = [
   },
   {
     title: "Purin Car",
-    subheading: "ANDROID APP · JETPACK COMPOSE · FULL STACK DEVELOPMENT",
+    subheading: "ANDROID APP · FULL STACK DEVELOPMENT",
     slogan: "A reliable assistant for your vehicle’s health and longevity",
     description: [
       {
@@ -52,11 +50,6 @@ export const projects: Project[] = [
     ],
     thumbnail: "/portfolio/projects/purin_car/thumbnail.png",
     link: "/project/purin-car",
-    images: [
-      "/portfolio/projects/purin_car/purin_car_records.png",
-      "/portfolio/projects/purin_car/purin_car_selection.png",
-      "/portfolio/projects/purin_car/purin_car_service.png",
-    ],
     featured: true,
     role: "Full Stack Developer",
     techstack: ["Kotlin", "Jetpack Compose", "Room Database", "SmartCar API"],
@@ -75,11 +68,6 @@ export const projects: Project[] = [
     ],
     thumbnail: "/portfolio/projects/glub_world/thumbnail.png",
     link: "/project/glub-world",
-    images: [
-      "/portfolio/projects/glub_world/ending.png",
-      "/portfolio/projects/glub_world/hot_seat.png",
-      "/portfolio/projects/glub_world/login.png",
-    ],
     featured: false,
     role: "Game Developer",
     techstack: ["HTML", "JavaScript", "CSS"],
@@ -87,7 +75,7 @@ export const projects: Project[] = [
   },
   {
     title: "Fabflix",
-    subheading: "WEB APP · AWS · FULL STACK DEVELOPMENT",
+    subheading: "WEB APP · FULL STACK DEVELOPMENT",
     slogan: "Connecting you with films through an expansive cinematic catalog",
     description: [
       {
@@ -97,11 +85,6 @@ export const projects: Project[] = [
     ],
     thumbnail: "/portfolio/projects/fabflix/thumbnail.png",
     link: "/project/fabflix",
-    images: [
-      "/portfolio/projects/fabflix/admin.png",
-      "/portfolio/projects/fabflix/catalog.png",
-      "/portfolio/projects/fabflix/login.png",
-    ],
     featured: true,
     role: "Full Stack Developer",
     techstack: [
@@ -135,11 +118,6 @@ export const projects: Project[] = [
     ],
     thumbnail: "/portfolio/projects/guidance_glasses/thumbnail.png",
     link: "/project/guidance-glasses",
-    images: [
-      "/portfolio/projects/guidance_glasses/dataset.png",
-      "/portfolio/projects/guidance_glasses/guidance_glasses.png",
-      "/portfolio/projects/guidance_glasses/guidanceglasses_ultrasonic.png",
-    ],
     featured: true,
     role: "Embedded Systems Engineer",
     techstack: ["Python", "YOLOv5", "Nvidia Jetson Nano", "C"],

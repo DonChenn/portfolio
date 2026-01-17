@@ -18,6 +18,11 @@ export function ProjectInformation({ project }: ProjectInformationProps) {
               ))}
             </ul>
           )}
+          {item.image && (
+            <div className="description-image-container">
+              <img src={item.image} alt={item.header} className="description-image" />
+            </div>
+          )}
         </div>
       ))}
     </div>
