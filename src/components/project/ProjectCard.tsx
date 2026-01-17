@@ -8,32 +8,20 @@ interface ProjectCardItemProps extends Project {
 function FaturedProjectCard({
   title,
   subheading,
-  description,
   thumbnail,
   link,
-  index,
 }: ProjectCardItemProps) {
-  const isReversed = index % 2 !== 0;
-
   return (
-    <article
-      className={`project-card-container ${isReversed ? "flex-reverse" : ""}`}
-    >
+    <Link to={link} className="project-card-container">
       <div className="project-image-wrapper">
         <img src={thumbnail} alt={title} className="project-thumbnail" />
       </div>
 
-      <div
-        className={`project-content ${isReversed ? "text-right align-end" : "text-left align-start"}`}
-      >
+      <div className="project-content">
         <h3 className="project-title">{title}</h3>
         <p className="description">{subheading}</p>
-        <p className="description">{description}</p>
-        <Link to={link} className="project-link-action">
-          read more →
-        </Link>
       </div>
-    </article>
+    </Link>
   );
 }
 
@@ -64,7 +52,7 @@ function AllProjectCard({
   link,
 }: ProjectCardItemProps) {
   return (
-    <article className="project-card-container">
+    <Link to={link} className="project-card-container">
       <div className="project-image-wrapper">
         <img src={thumbnail} alt={title} className="project-thumbnail" />
       </div>
@@ -72,11 +60,8 @@ function AllProjectCard({
         <h3 className="project-title">{title}</h3>
         <p className="description">{subheading}</p>
         <p className="description">{description}</p>
-        <Link to={link} className="project-link-action">
-          read more →
-        </Link>
       </div>
-    </article>
+    </Link>
   );
 }
 

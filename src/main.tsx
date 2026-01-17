@@ -3,8 +3,9 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./css/App.css";
 import "./css/introduction.css"
-import "./css/project.css"
+import "./css/ProjectCard.css"
 import "./css/project_details.css"
+import "./css/About.css"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
