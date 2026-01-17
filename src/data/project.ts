@@ -23,7 +23,15 @@ export const projects: Project[] = [
     images: [],
     featured: true,
     role: "Full Stack Software Engineer Intern",
-    techstack: ["Flutter", "React", "MedusaJS", "Typescript", "Vue", "Dart", "Alibaba Cloud"],
+    techstack: [
+      "Flutter",
+      "React",
+      "MedusaJS",
+      "Typescript",
+      "Vue",
+      "Dart",
+      "Alibaba Cloud",
+    ],
     links: [],
   },
   {
@@ -41,15 +49,14 @@ export const projects: Project[] = [
     featured: true,
     role: "Full Stack Developer",
     techstack: ["Kotlin", "Jetpack Compose", "Room Database", "SmartCar API"],
-    links: [],
+    links: [{label: "GitHub", url: "https://github.com/DonChenn/PurinCar"}],
   },
   {
     title: "Glub World",
     subheading: "WEB APP · VIDEO GAME · FULL STACK DEVELOPMENT",
     slogan:
       "A fish’s brave journey across the deep, a video game for my significant other",
-    description:
-      "A fish’s brave journey across the deep, a video game for my significant other",
+    description: "",
     thumbnail: "/portfolio/projects/glub_world/thumbnail.png",
     link: "/project/glub-world",
     images: [
@@ -60,14 +67,13 @@ export const projects: Project[] = [
     featured: false,
     role: "Game Developer",
     techstack: ["HTML", "JavaScript", "CSS"],
-    links: [],
+    links: [{label: "GitHub", url: "https://github.com/DonChenn/Glub_World"}],
   },
   {
     title: "Fabflix",
     subheading: "WEB APP · AWS · FULL STACK DEVELOPMENT",
     slogan: "Connecting you with films through an expansive cinematic catalog",
-    description:
-      "Connecting you with films through an expansive cinematic catalog",
+    description: "",
     thumbnail: "/portfolio/projects/fabflix/thumbnail.png",
     link: "/project/fabflix",
     images: [
@@ -78,15 +84,14 @@ export const projects: Project[] = [
     featured: true,
     role: "Full Stack Developer",
     techstack: ["Java", "JavaScript", "AWS", "HTML", "CSS"],
-    links: [],
+    links: [{label: "GitHub", url: "https://github.com/DonChenn/Fabflix"}],
   },
   {
     title: "Guidance Glasses",
     subheading: "EMBEDDED SYSTEMS · COMPUTER VISION · MACHINE LEARNING",
     slogan:
       "Helping the visually impaired make the world feel a little more navigatable",
-    description:
-      "Helping the visually impaired make the world feel a little more navigatable",
+    description: "",
     thumbnail: "/portfolio/projects/guidance_glasses/thumbnail.png",
     link: "/project/guidance-glasses",
     images: [
@@ -97,6 +102,6 @@ export const projects: Project[] = [
     featured: true,
     role: "Embedded Systems Engineer",
     techstack: ["Python", "YOLOv5", "Nvidia Jetson Nano", "C"],
-    links: [],
+    links: [{ label: "GitHub", url: "https://github.com/franciscotimoh/gb-glasses" }],
   },
 ];

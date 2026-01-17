@@ -47,7 +47,6 @@ export function FeaturedProjectCards() {
 function AllProjectCard({
   title,
   subheading,
-  description,
   thumbnail,
   link,
 }: ProjectCardItemProps) {
@@ -59,7 +58,6 @@ function AllProjectCard({
       <div className="project-content">
         <h3 className="project-title">{title}</h3>
         <p className="description">{subheading}</p>
-        <p className="description">{description}</p>
       </div>
     </Link>
   );
