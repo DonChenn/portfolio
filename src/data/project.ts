@@ -166,6 +166,10 @@ export const projects: Project[] = [
     techstack: ["Python", "YOLOv5", "Nvidia Jetson Nano", "C"],
     links: [
       { label: "GitHub", url: "https://github.com/franciscotimoh/gb-glasses" },
+      {
+        label: "Presentation",
+        url: "/portfolio/projects/guidance_glasses/slideshow.pdf",
+      },
     ],
     description: [
       {
