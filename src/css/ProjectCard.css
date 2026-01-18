@@ -3,9 +3,35 @@
   margin-bottom: 4rem;
 }
 
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 0 1rem;
+  }
+}
+
 .All-Projects {
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+@media (max-width: 768px) {
+  .All-Projects {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .All-Projects {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 .project-cards {

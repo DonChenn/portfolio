@@ -2,3 +2,17 @@
   margin-left: 3rem;
   margin-right: 3rem;
 }
+
+@media (max-width: 768px) {
+  .About {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .About {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

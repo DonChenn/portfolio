@@ -16,6 +16,20 @@
   padding-right: 3rem;
 }
 
+@media (max-width: 768px) {
+  .intro-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .intro-text-container {
   flex: 1;
   max-width: 600px;

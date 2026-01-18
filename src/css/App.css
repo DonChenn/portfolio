@@ -26,6 +26,12 @@ h3 {
 h1 {
   font-size: 3rem;
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
 h2 {
   font-size: 2rem;
 }
@@ -51,6 +57,18 @@ header {
 
 .nav-bar {
   padding: 1rem 3rem 1rem 3rem;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    padding: 1rem 1rem;
+  }
 }
 
 .nav-container {
@@ -109,6 +127,26 @@ footer {
   align-items: center;
   gap: 64px;
   flex: 1 0 0;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 16px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
 }
 
 .footer-container {

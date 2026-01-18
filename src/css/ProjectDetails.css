@@ -3,9 +3,44 @@
   margin-right: 3rem;
 }
 
+@media (max-width: 768px) {
+  .project-detail-body {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-detail-body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 .project-information {
   margin-left: 10rem;
   margin-right: 10rem;
+}
+
+@media (max-width: 1024px) {
+  .project-information {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-information {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-information {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .project-details-header {
@@ -32,6 +67,18 @@
   border-radius: 12px;
 }
 
+@media (max-width: 768px) {
+  .project-details-thumbnail {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-details-thumbnail {
+    max-width: 100%;
+  }
+}
+
 .project-info th,
 .project-info td {
   padding: 1rem;
@@ -51,6 +98,42 @@
 .project-info td {
   color: #555;
   font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .project-info thead {
+    display: none;
+  }
+  .project-info tr {
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  .project-info td {
+    display: block;
+    text-align: right;
+    padding: 0.5rem 0;
+    border-bottom: none;
+    position: relative;
+    padding-left: 50%;
+  }
+  .project-info td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+  }
+  .project-info-list {
+    text-align: right;
+    display: inline-block;
+  }
 }
 
 .project-info-list {

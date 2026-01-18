@@ -28,15 +28,15 @@ export function ProjectIntro({ project }: ProjectIntroProps) {
         </thead>
         <tbody>
           <tr>
-            <td>{project.role}</td>
-            <td>
+            <td data-label="Role">{project.role}</td>
+            <td data-label="Tech Stack">
               <ul className="project-info-list">
                 {project.techstack?.map((tech) => (
                   <li key={tech}>{tech}</li>
                 ))}
               </ul>
             </td>
-            <td>
+            <td data-label="Links">
               <ul className="project-info-list">
                 {project.links && project.links.length > 0 ? (
                   project.links.map((link) => (
