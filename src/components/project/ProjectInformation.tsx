@@ -18,9 +18,16 @@ export function ProjectInformation({ project }: ProjectInformationProps) {
               ))}
             </ul>
           )}
-          {item.image && (
-            <div className="description-image-container">
-              <img src={item.image} alt={item.header} className="description-image" />
+          {item.images && item.images.length > 0 && (
+            <div className="description-images-container">
+              {item.images.map((imgSrc, imgIndex) => (
+                <img
+                  key={imgIndex}
+                  src={imgSrc}
+                  alt={`${item.header} ${imgIndex + 1}`}
+                  className="description-image"
+                />
+              ))}
             </div>
           )}
         </div>

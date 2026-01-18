@@ -2,7 +2,7 @@ export interface Project {
   title: string;
   subheading: string;
   slogan: string;
-  description: { header: string; text: string; bullets?: string[]; image?: string }[];
+  description: { header: string; text: string; bullets?: string[]; images?: string[] }[];
   thumbnail: string;
   link: string;
   featured: boolean;
@@ -14,13 +14,27 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "SMYZE",
-    subheading:
-      "MOBILE APP · WEB APP · FULL STACK DEVELOPMENT",
+    subheading: "MOBILE APP · WEB APP · FULL STACK DEVELOPMENT",
     slogan: "Full Stack Software Engineer Intern",
     description: [
       {
         header: "Description",
         text: "Smyze is a fully automated robotic drink station. During my time with SMYZE, I worked as a Full Stack Developer contributing to their Medusa v2 commerce backend and WeChat/Kiosk interfaces.",
+      },
+      {
+        header: "Backend",
+        text: "I build a react website outlet management system within Medusa v2 that had custom workflows and hooks which contained all the information of each physical store with PayloadCMS across Kiosk, WeChat Mini Program, and Admin interfaces. It controlled which products, kiosks, and regions to support the store operations. I also developed a product cloning module that enabled duplicating of products with overrides for pricing, ingredients, and metadata per location while maintaining parent child data relationships.",
+        images: ["/portfolio/projects/smyze/outlet.png", ]
+      },
+      {
+        header: "Kiosk",
+        text: "I developed the Flutter-based Kiosk application that dynamically loads the menu by filtering products and applying store specific overrides for pricing and availability from the Medusa backend. I also integrated a hybrid checkout option to pay with WeChat Pay through QR codes to transfer carts to WeChat.",
+        images: ["/portfolio/projects/smyze/kiosk_menu.png", "/portfolio/projects/smyze/kiosk_item.png"]
+      },
+      {
+        header: "WeChat",
+        text: "I built the WeChat Program to serve as a mobile store with customer loyalty points. I implemented secure authentication linking WeChat identities to Medusa profiles and developed a complete e-commerce flow with store-specific menus and coupon redemption.",
+        images: ["/portfolio/projects/smyze/wechat_menu.png", "/portfolio/projects/smyze/wechat_confirm.png"]
       },
     ],
     thumbnail: "/portfolio/projects/smyze/thumbnail.png",

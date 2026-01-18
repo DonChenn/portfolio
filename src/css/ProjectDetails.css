@@ -77,16 +77,19 @@
   text-decoration: underline;
 }
 
-.description-image-container {
+.description-images-container {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   margin: 2rem 0;
 }
 
 .description-image {
+  width: auto;
   max-width: 100%;
-  height: auto;
+  max-height: 800px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
