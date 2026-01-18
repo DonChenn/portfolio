@@ -99,13 +99,13 @@ header {
 }
 
 .nav-links {
-  display: none;
+  display: flex;
   list-style: none;
+  gap: 0.5rem;
 }
 
 @media (min-width: 768px) {
   .nav-links {
-    display: flex;
     gap: 1.5rem;
   }
 }
@@ -116,6 +116,15 @@ header {
   font-family: "Roboto Mono", monospace;
   color: #000;
   text-decoration: underline;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .nav-projects,
+  .nav-about,
+  .nav-resume {
+    font-size: 1rem;
+  }
 }
 
 footer {
