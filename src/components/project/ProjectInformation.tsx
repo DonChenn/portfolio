@@ -4,6 +4,8 @@ interface ProjectInformationProps {
   project: Project;
 }
 
+// Text body and Images for project details page
+
 export function ProjectInformation({ project }: ProjectInformationProps) {
   return (
     <div className="project-information">

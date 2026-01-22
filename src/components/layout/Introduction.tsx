@@ -13,11 +13,15 @@ function Introduction() {
                 1500,
                 "a Software Engineer!",
                 1500,
-                "a Website Developer!",
+                "a Web Developer!",
                 1500,
                 "a Mobile Developer!",
                 1500,
                 "a Coding Tutor!",
+                1500,
+                "a Hooper!",
+                1500,
+                "a Boba Connoisseur!",
                 1500,
               ]}
               wrapper="span"

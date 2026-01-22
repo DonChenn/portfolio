@@ -4,6 +4,8 @@ interface ProjectIntroProps {
   project: Project;
 }
 
+// Table under project thumbnail
+
 export function ProjectIntro({ project }: ProjectIntroProps) {
   return (
     <div className="project-details-container">

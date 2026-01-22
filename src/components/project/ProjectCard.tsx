@@ -5,6 +5,8 @@ interface ProjectCardItemProps extends Project {
   index: number;
 }
 
+// Featured Projects
+
 function FaturedProjectCard({
   title,
   subheading,
@@ -45,6 +47,8 @@ export function FeaturedProjectCards() {
     </section>
   );
 }
+
+// All Projects
 
 function AllProjectCard({
   title,
