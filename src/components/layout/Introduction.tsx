@@ -1,12 +1,28 @@
+import { TypeAnimation } from 'react-type-animation';
+
 function Introduction() {
   return (
     <section className="intro">
       <div className="intro-container">
-        {/* content */}
         <div className="intro-text-container">
           <h1 className="name">
             <span className="name-black">Hello, I'm </span>
-            <span className="name-color">Donovan!</span>
+            <TypeAnimation
+              sequence={[
+                'Donovan!',
+                1500,
+                'a Software Engineer!',
+                1500,
+                'a hooper!', 
+                1500,
+                'a coding tutor!', 
+                1500,
+              ]}
+              wrapper="span"
+              speed={50}
+              className="name-color"
+              repeat={Infinity}
+            />
           </h1>
           <p className="description">
             I'm currently at UC Irvine studying Computer Science with an
