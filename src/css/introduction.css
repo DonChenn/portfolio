@@ -37,10 +37,10 @@
 
 .name-black {
   color: #2a2d38;
+  display: block;
 }
 
 .name {
-  white-space: nowrap;
   display: block;
 }
 

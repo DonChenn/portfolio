@@ -1,4 +1,4 @@
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 
 function Introduction() {
   return (
@@ -9,13 +9,15 @@ function Introduction() {
             <span className="name-black">Hello, I'm </span>
             <TypeAnimation
               sequence={[
-                'Donovan!',
+                "Donovan!",
                 1500,
-                'a Software Engineer!',
+                "a Software Engineer!",
                 1500,
-                'a hooper!', 
+                "a Website Developer!",
                 1500,
-                'a coding tutor!', 
+                "a Mobile Developer!",
+                1500,
+                "a Coding Tutor!",
                 1500,
               ]}
               wrapper="span"

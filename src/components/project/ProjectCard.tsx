@@ -28,17 +28,19 @@ function FaturedProjectCard({
 export function FeaturedProjectCards() {
   return (
     <section className="projects-section">
-      <h2>Featured Projects</h2>
-      <div className="project-cards">
-        {projects
-          .filter((project) => project.featured)
-          .map((project, index) => (
-            <FaturedProjectCard
-              key={project.title}
-              {...project}
-              index={index}
-            />
-          ))}
+      <div className="projects-container">
+        <h2>Featured Projects</h2>
+        <div className="project-cards">
+          {projects
+            .filter((project) => project.featured)
+            .map((project, index) => (
+              <FaturedProjectCard
+                key={project.title}
+                {...project}
+                index={index}
+              />
+            ))}
+        </div>
       </div>
     </section>
   );
