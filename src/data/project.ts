@@ -42,8 +42,12 @@ export const projects: Project[] = [
     ],
     description: [
       {
-        header: "Description",
-        text: "Tracking the real-time emotional pulse of political discourse. This project is a live sentiment analysis tool that scrapes political discussions from Reddit and classifies them into 28 distinct emotional categories (such as Joy, Relief, or Confusion) rather than just simple positive/negative binary labels.",
+        header: "The Problem",
+        text: "Public sentiment on high-traffic platforms like Reddit is hard to navigate. Extracting meaningful emotional trends currently requires manually reading through thousands of comments and posts is unscalable, biased by what appears on top, and impossible to quantify in real-time.",
+      },
+      {
+        header: "Our Solution",
+        text: "The result is a live sentiment analysis that quantifies the sentiment over of political discourse based on a topic. Instead of simple positive or negative labels, the system utilizes a fine-tuned RoBERTa transformer to classify real-time comments into 28 distinct emotional states—such as 'Admiration,' 'Fear,' or 'Curiosity.' By aggregating these insights instantly, the platform generates a dynamic dashboard that allows users to visualize the specific emotional gaps between liberal and conservative viewpoints without ever needing to read a single comment.",
       },
       {
         header: "In-Progress",
