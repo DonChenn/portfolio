@@ -1,7 +1,8 @@
+// https://mockuphone.com/ for thumbnail making
+
 export interface Project {
   title: string;
   subheading: string;
-  slogan: string;
   thumbnail: string;
   link: string;
   featured: boolean;
@@ -18,9 +19,41 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Reddit Sentiment Analysis",
+    subheading: "ARTIFICIAL INTELLIGENCE · MACHINE LEARNING · WEB APP",
+    thumbnail: "/portfolio/projects/reddit_sentiment_analysis/thumbnail.png",
+    link: "/project/reddit_sentiment_analysis",
+    featured: true,
+    role: "Sentiment Analysis Machine Learning Lead",
+    techstack: [
+      "Python",
+      "PyTorch",
+      "Hugging Face Transformers",
+      "RoBERTa",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+    ],
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/DonChenn/RedditSentimentAnalysis",
+      },
+    ],
+    description: [
+      {
+        header: "Description",
+        text: "Tracking the real-time emotional pulse of political discourse. This project is a live sentiment analysis tool that scrapes political discussions from Reddit and classifies them into 28 distinct emotional categories (such as Joy, Relief, or Confusion) rather than just simple positive/negative binary labels.",
+      },
+      {
+        header: "In-Progress",
+        text: "I fine tuned a RoBERTa-base model on GoEmotions, a human-annotated dataset of 58k Reddit comments extracted from popular English-language subreddits and labeled with 27 emotion categories. This project is still in progress.",
+      },
+    ],
+  },
+  {
     title: "SMYZE",
     subheading: "MOBILE APP · WEB APP · FULL STACK DEVELOPMENT",
-    slogan: "Full Stack Software Engineer Intern",
     thumbnail: "/portfolio/projects/smyze/thumbnail.png",
     link: "/project/smyze",
     featured: true,
@@ -66,7 +99,6 @@ export const projects: Project[] = [
   {
     title: "Purin Car",
     subheading: "ANDROID APP · FULL STACK DEVELOPMENT",
-    slogan: "A reliable assistant for your vehicle’s health and longevity",
     thumbnail: "/portfolio/projects/purin_car/thumbnail.png",
     link: "/project/purin-car",
     featured: true,
@@ -101,8 +133,6 @@ export const projects: Project[] = [
   {
     title: "Glub World",
     subheading: "WEB APP · VIDEO GAME · FULL STACK DEVELOPMENT",
-    slogan:
-      "A fish’s brave journey across the deep, a video game for my significant other",
     thumbnail: "/portfolio/projects/glub_world/thumbnail.png",
     link: "/project/glub-world",
     featured: false,
@@ -130,7 +160,6 @@ export const projects: Project[] = [
   {
     title: "Fabflix",
     subheading: "WEB APP · FULL STACK DEVELOPMENT",
-    slogan: "Connecting you with films through an expansive cinematic catalog",
     thumbnail: "/portfolio/projects/fabflix/thumbnail.png",
     link: "/project/fabflix",
     featured: true,
@@ -157,11 +186,9 @@ export const projects: Project[] = [
   {
     title: "Guidance Glasses",
     subheading: "EMBEDDED SYSTEMS · COMPUTER VISION · MACHINE LEARNING",
-    slogan:
-      "Helping the visually impaired make the world feel a little more navigatable",
     thumbnail: "/portfolio/projects/guidance_glasses/thumbnail.png",
     link: "/project/guidance-glasses",
-    featured: true,
+    featured: false,
     role: "Embedded Systems Engineer",
     techstack: ["Python", "YOLOv5", "Nvidia Jetson Nano", "C"],
     links: [
