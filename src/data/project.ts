@@ -30,9 +30,12 @@ export const projects: Project[] = [
       "PyTorch",
       "Hugging Face Transformers",
       "RoBERTa",
+      "BERTopic",
       "Pandas",
       "NumPy",
       "Scikit-learn",
+      "CNN",
+      "VADER"
     ],
     links: [
       {
@@ -43,15 +46,19 @@ export const projects: Project[] = [
     description: [
       {
         header: "The Problem",
-        text: "Public sentiment on high-traffic platforms like Reddit is hard to navigate. Extracting meaningful emotional trends currently requires manually reading through thousands of comments and posts is unscalable, biased by what appears on top, and impossible to quantify in real-time.",
+        text: "Public sentiment on platforms like Reddit is hard to navigate. Extracting meaningful emotional trends currently requires manually reading through thousands of comments and posts, which is unscalable, biased by what appears on top, and impossible to quantify in real-time.",
       },
       {
         header: "Our Solution",
-        text: "The result is a live sentiment analysis that quantifies the sentiment over of political discourse based on a topic. Instead of simple positive or negative labels, the system utilizes a fine-tuned RoBERTa transformer to classify real-time comments into 28 distinct emotional states—such as 'Admiration,' 'Fear,' or 'Curiosity.' By aggregating these insights instantly, the platform generates a dynamic dashboard that allows users to visualize the specific emotional gaps between liberal and conservative viewpoints without ever needing to read a single comment.",
+        text: "We built a live sentiment analysis tool that classifies both political orientation and sentiment polarity to quantify political discourse. The platform generates a dynamic dashboard that allows users to visualize the specific emotional gaps between liberal and conservative viewpoints on various topics without ever needing to read a single comment.",
       },
       {
-        header: "In-Progress",
-        text: "I fine tuned a RoBERTa-base model on GoEmotions, a human-annotated dataset of 58k Reddit comments extracted from popular English-language subreddits and labeled with 27 emotion categories. This project is still in progress.",
+        header: "Architecture & Pipeline",
+        text: "I developed the end-to-end integration pipeline connecting three core models: a Supervised Political classifier, a Supervised Sentiment classifier, and an Unsupervised Topic clustering model using BERTopic. This pipeline processes live Reddit data for comprehensive, real-time inference and feeds directly into our visualization dashboard.",
+      },
+      {
+        header: "Model Development & Exploration",
+        text: "As the Sentiment Analysis Model Lead, I architected and trained the sentiment classification model using the GoEmotions dataset. I implemented a multi-label RoBERTa-base architecture to identify 28 distinct emotional categories. To ensure optimal performance, I benchmarked this transformer against several other approaches, including Convolutional Neural Networks (CNNs) using sliding word windows, few-shot prompting with LLMs, and lexicon-based scoring using VADER.",
       },
     ],
   },
@@ -63,28 +70,31 @@ export const projects: Project[] = [
     featured: true,
     role: "Full Stack Software Engineer Intern",
     techstack: [
+      "Node.js",
       "Flutter",
       "React",
       "MedusaJS",
-      "Typescript",
+      "TypeScript",
       "Vue",
       "Dart",
       "Alibaba Cloud",
+      "Payload CMS",
+      "PostgreSQL"
     ],
     links: [{ label: "Company Website", url: "https://smyze.cn/" }],
     description: [
       {
         header: "Description",
-        text: "Smyze is a fully automated robotic drink station. During my time with SMYZE, I worked as a Full Stack Developer contributing to their Medusa v2 commerce backend and WeChat/Kiosk interfaces.",
+        text: "Smyze is a fully automated robotic drink station. As a Software Engineer Intern, I architected and implemented a headless commerce ecosystem using MedusaJS V2 (Node.js/TypeScript), powering two distinct frontends: a Flutter-based physical Kiosk and a Vue.js/uni-app WeChat Mini-Program.",
       },
       {
         header: "Backend",
-        text: "I build a react website outlet management system within Medusa v2 that had custom workflows and hooks which contained all the information of each physical store with PayloadCMS across Kiosk, WeChat Mini Program, and Admin interfaces. It controlled which products, kiosks, and regions to support the store operations. I also developed a product cloning module that enabled duplicating of products with overrides for pricing, ingredients, and metadata per location while maintaining parent child data relationships.",
+        text: 'I built a custom React Admin interface and an Outlet Management module extending Medusa v2. Utilizing Medusa\'s Data Model Layer (DML) and transaction workflows with automatic failure compensation, I bridged the gap between sales channels and store locations. I engineered a "Deep Clone" workflow that reduced product deployment time from hours to seconds by allowing admins to batch deploy master products with price and variant overrides. Additionally, I integrated Payload CMS via a Medusa Remote Link module, utilizing Alibaba Cloud OSS to create a single source of truth for all media assets.',
         images: ["/portfolio/projects/smyze/outlet.png"],
       },
       {
         header: "Kiosk",
-        text: "I developed the Flutter-based Kiosk application that dynamically loads the menu by filtering products and applying store specific overrides for pricing and availability from the Medusa backend. I also integrated a hybrid checkout option to pay with WeChat Pay through QR codes to transfer carts to WeChat.",
+        text: "I developed a landscape Android Kiosk application using Flutter and Dart for tablets. The app dynamically initializes its store context, localized pricing, and menus using hardware device IDs. To ensure high performance, I implemented an asset caching layer for Payload CMS media. I also built the deep-link QR codes to transfer anonymous live carts from kiosks to personal devices, supported by a real-time polling listener to monitor Medusa for paid status triggers.",
         images: [
           "/portfolio/projects/smyze/kiosk_menu.png",
           "/portfolio/projects/smyze/kiosk_item.png",
@@ -92,7 +102,7 @@ export const projects: Project[] = [
       },
       {
         header: "WeChat",
-        text: "I built the WeChat Program to serve as a mobile store with customer loyalty points. I implemented secure authentication linking WeChat identities to Medusa profiles and developed a complete e-commerce flow with store-specific menus and coupon redemption.",
+        text: "I engineered a cross platform WeChat Mini-Program using Vue.js and uni-app, leveraging an rpx layout system to translate Figma designs into compatible mobile interfaces. The app functions as a personalized mobile store with loyalty point integration. I built a custom cart transfer module that captures the kiosk's QR deep link, securely authenticates the user's WeChat OpenID, and transfers cart ownership for checkout via the JSAPI payment workflow.",
         images: [
           "/portfolio/projects/smyze/wechat_menu.png",
           "/portfolio/projects/smyze/wechat_confirm.png",
@@ -100,14 +110,19 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
+{
     title: "Purin Car",
     subheading: "ANDROID APP · FULL STACK DEVELOPMENT",
     thumbnail: "/portfolio/projects/purin_car/thumbnail.png",
     link: "/project/purin-car",
     featured: true,
     role: "Full Stack Developer",
-    techstack: ["Kotlin", "Jetpack Compose", "Room Database", "SmartCar API"],
+    techstack: [
+      "Kotlin", 
+      "Jetpack Compose", 
+      "Room Database", 
+      "SmartCar API"
+    ],
     links: [{ label: "GitHub", url: "https://github.com/DonChenn/PurinCar" }],
     description: [
       {
@@ -116,7 +131,7 @@ export const projects: Project[] = [
       },
       {
         header: "My Solution",
-        text: "Purin Car is an Android Jetpack Compose application built to extend the lifespan of my car (2025 Toyota Camry) to hopefully 300,000+ miles. Using SmartCar API to connect to your car, it automatically updates the odometer on your app and checks for any upcoming services needed based on mileage or time intervals ensuring NO service is overlooked. Purin Car tracks and manages:",
+        text: "Purin Car is an Android application built to extend the lifespan of my car (2025 Toyota Camry) to hopefully 300,000+ miles. Using the Smartcar API, the app securely connects to the vehicle to automatically sync the real-time odometer reading upon opening. It calculates and tracks maintenance schedules based on both mileage and time intervals, whichever comes first, ensuring no critical service is overlooked.",
         bullets: [
           "Engine Oil (5000 miles or 6 months)",
           "Air Filters (15000 miles or 1 year)",
@@ -126,6 +141,10 @@ export const projects: Project[] = [
           "Transmission Fluid (60000 miles or 3 years)",
           "Spark Plugs (100000 miles or 5 years)",
         ],
+      },
+      {
+        header: "Technical Implementation",
+        text: "I built the application using Kotlin and Jetpack Compose, adhering to an Model - View - View Model architecture. To handle the Smartcar API integration, I implemented an OAuth 2.0 flow, which manages authorization code exchanges and automatic token refreshing. For local data persistence, I utilized a Room Database to store multiple vehicles, log individual maintenance records, and track accumulated costs. Additionally, I built an import/export tool utilizing Kotlin Coroutines to allow users to backup or transfer their service history via CSV files.",
         images: [
           "/portfolio/projects/purin_car/purin_car_select.png",
           "/portfolio/projects/purin_car/purin_car_service.png",
