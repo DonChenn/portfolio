@@ -24,7 +24,7 @@ export const projects: Project[] = [
     thumbnail: "/portfolio/projects/reddit_sentiment_analysis/thumbnail.png",
     link: "/project/reddit_sentiment_analysis",
     featured: true,
-    role: "Sentiment Analysis Machine Learning Lead",
+    role: "Sentiment Analysis Model Lead",
     techstack: [
       "Python",
       "PyTorch",
@@ -59,6 +59,10 @@ export const projects: Project[] = [
       {
         header: "Model Development & Exploration",
         text: "As the Sentiment Analysis Model Lead, I architected and trained the sentiment classification model using the GoEmotions dataset. I implemented a multi-label RoBERTa-base architecture to identify 28 distinct emotional categories. To ensure optimal performance, I benchmarked this transformer against several other approaches, including Convolutional Neural Networks (CNNs) using sliding word windows, few-shot prompting with LLMs, and lexicon-based scoring using VADER.",
+        images: [
+          "/portfolio/projects/reddit_sentiment_analysis/Emotions.png",
+          "/portfolio/projects/reddit_sentiment_analysis/Bucket.png"
+        ]
       },
     ],
   },
