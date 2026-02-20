@@ -70,16 +70,10 @@ export const projects: Project[] = [
     featured: true,
     role: "Full Stack Software Engineer Intern",
     techstack: [
-      "Node.js",
-      "Flutter",
-      "React",
-      "MedusaJS",
-      "TypeScript",
-      "Vue",
-      "Dart",
-      "Alibaba Cloud",
-      "Payload CMS",
-      "PostgreSQL"
+      "Frontend: React, Flutter (Dart), Vue.js (uni-app)",
+      "Backend: Node.js, TypeScript, MedusaJS, Payload CMS",
+      "Database: PostgreSQL",
+      "Cloud: Alibaba Cloud OSS",
     ],
     links: [{ label: "Company Website", url: "https://smyze.cn/" }],
     description: [
