@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-container">
         
         <div className="footer-left">
-          <p className="made-by">Made by Donovan Chen</p>
+          <p className="made-by">Made by Donovan, Powered by matchas</p>
         </div>
 
         <div className="footer-right">
