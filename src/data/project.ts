@@ -43,26 +43,37 @@ export const projects: Project[] = [
                 label: "GitHub",
                 url: "https://github.com/DonChenn/RedditSentimentAnalysis",
             },
+            {
+                label: "Written Report",
+                url: "/portfolio/projects/reddit_sentiment_analysis/report.pdf",
+            },
         ],
         description: [
             {
-                header: "The Problem",
+                header: "r/The_Problem",
                 text: "Public sentiment on platforms like Reddit is hard to navigate. Extracting meaningful emotional trends currently requires manually reading through thousands of comments and posts, which is unscalable, biased by what appears on top, and impossible to quantify in real-time.",
             },
             {
-                header: "Our Solution",
+                header: "r/Our_Solution",
                 text: "We built a live sentiment analysis tool that classifies both political orientation and sentiment polarity to quantify political discourse. The platform generates a dynamic dashboard that allows users to visualize the specific emotional gaps between liberal and conservative viewpoints on various topics without ever needing to read a single comment.",
             },
             {
-                header: "Architecture & Pipeline",
+                header: "r/Architecture_&_Pipeline",
                 text: "I developed the end-to-end integration pipeline connecting three core models: a Supervised Political classifier, a Supervised Sentiment classifier, and an Unsupervised Topic clustering model using BERTopic. This pipeline processes live Reddit data for comprehensive, real-time inference and feeds directly into our visualization dashboard.",
             },
             {
-                header: "Model Development & Exploration",
+                header: "r/Model_Development_&_Exploration",
                 text: "As the Sentiment Analysis Model Lead, I architected and trained the sentiment classification model using the GoEmotions dataset. I implemented a multi-label RoBERTa-base architecture to identify 28 distinct emotional categories. To ensure optimal performance, I benchmarked this transformer against several other approaches, including Convolutional Neural Networks (CNNs) using sliding word windows, few-shot prompting with LLMs, and lexicon-based scoring using VADER.",
                 images: [
                     "/portfolio/projects/reddit_sentiment_analysis/Emotions.png",
                     "/portfolio/projects/reddit_sentiment_analysis/Bucket.png",
+                ],
+            },
+            {
+                header: "r/Live_Application",
+                text: "The live application combines a Flask REST API with a React + Vite frontend for a real-time political sentiment analysis. Users select a topic from 33 human-labeled categories, and the backend streams live progress via Server-Sent Events (SSE) as it scrapes r/politics, matches posts to the selected topic, and runs all three models in sequence. The resulting dashboard visualizes the emotional gap between Liberal and Conservative commenters, displaying top emotions, sentiment bucket distributions, and a natural-language summary for each political group without the user ever needing to read a single comment.",
+                images: [
+                    "/portfolio/projects/reddit_sentiment_analysis/demo.gif",
                 ],
             },
         ],
