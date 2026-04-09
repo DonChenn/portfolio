@@ -1,3 +1,8 @@
+import Slideshow from "../components/Slideshow";
+
+const imageModules = import.meta.glob("/public/about/*", { eager: true, as: "url" });
+const aboutImages = Object.values(imageModules) as string[];
+
 function About() {
     return (
         <div className="About">
@@ -11,7 +16,7 @@ function About() {
                 professional interests, you can find me getting boba, playing
                 basketball, or even with my film camera taking pictures!
             </p>
-            <img src="/portfolio/tama.png" alt="tama" width="500" />
+            <Slideshow images={aboutImages} alt="About me photo" />
         </div>
     );
 }
