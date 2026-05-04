@@ -2,7 +2,8 @@ import Slideshow from "../components/Slideshow";
 
 const imageModules = import.meta.glob("/public/about/film/*", {
     eager: true,
-    as: "url",
+    query: "?url",
+    import: "default",
 });
 const aboutImages = Object.values(imageModules) as string[];
 
