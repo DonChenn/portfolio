@@ -21,7 +21,7 @@ function About() {
                     <p>
                         My name is Donovan Chen and I'm an incoming graduate
                         from the University of California, Irvine, where I
-                        studied Computer Science with a specialization in
+                        study Computer Science with a specialization in
                         Intelligent Systems. I was born and raised in
                         Sacramento, CA. I previously interned at{" "}
                         <a href="https://smyze.cn/">Smyze</a> as a software
