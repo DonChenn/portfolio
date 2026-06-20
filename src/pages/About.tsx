@@ -19,13 +19,14 @@ function About() {
                 </div>
                 <div className="about-text">
                     <p>
-                        My name is Donovan Chen and I'm an incoming graduate
-                        from the University of California, Irvine, where I
-                        study Computer Science with a specialization in
-                        Intelligent Systems. I was born and raised in
-                        Sacramento, CA. I previously interned at{" "}
-                        <a href="https://smyze.cn/">Smyze</a> as a software
-                        engineer.
+                        My name is Donovan Chen and i'm a graduate from the
+                        University of California, Irvine, where I studied Computer
+                        Science with a specialization in Intelligent Systems. I
+                        was born and raised in Sacramento, CA. I previously
+                        interned at <a href="https://smyze.cn/">Smyze</a>, and I
+                        am currently a Software Engineer Intern at{" "}
+                        <a href="https://www.elpolloloco.com/">El Pollo Loco</a>
+                        !.
                     </p>
                     <p>
                         As a software engineer, I want to build new features
