@@ -20,12 +20,17 @@ function About() {
                 <div className="about-text">
                     <p>
                         My name is Donovan Chen and i'm a graduate from the
-                        University of California, Irvine, where I studied Computer
-                        Science with a specialization in Intelligent Systems. I
-                        was born and raised in Sacramento, CA. I previously
-                        interned at <a href="https://smyze.cn/">Smyze</a>, and I
-                        am currently a Software Engineer Intern at{" "}
-                        <a href="https://www.elpolloloco.com/">El Pollo Loco</a>
+                        University of California, Irvine, where I studied
+                        Computer Science with a specialization in Intelligent
+                        Systems. I was born and raised in Sacramento, CA. I
+                        previously interned at{" "}
+                        <a href="https://smyze.cn/" target="_blank">
+                            Smyze
+                        </a>
+                        , and I am currently a Software Engineer Intern at{" "}
+                        <a href="https://www.elpolloloco.com/" target="_blank">
+                            El Pollo Loco
+                        </a>
                         !.
                     </p>
                     <p>
