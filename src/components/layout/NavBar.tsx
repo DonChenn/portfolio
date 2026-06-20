@@ -8,11 +8,10 @@ function NavBar() {
         <div className="nav-container">
           {/* name button */}
           <div className="logo-container">
-            <div>
-              <Link className="logo-name" to="/">
-                Donovan Chen
-              </Link>
-            </div>
+            <Link to="/" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+              <img src="/portfolio/logo.svg" alt="DC logo" style={{ height: "1.5rem" }} />
+              <span className="logo-name">Donovan Chen</span>
+            </Link>
           </div>
 
           {/* nav buttons */}
